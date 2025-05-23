@@ -1,0 +1,5 @@
+// 2. App.jsx (Routing setup) import React from 'react'; import { Routes, Route } from 'react-router-dom'; import Home from './pages/Home'; import Services from './pages/Services'; import Booking from './pages/Booking'; import Contact from './pages/Contact'; import Login from './pages/Login'; import Register from './pages/Register'; import Profile from './pages/Profile'; import Dashboard from './pages/Dashboard'; import Header from './components/Header'; import Footer from './components/Footer';
+
+const App = () => { return ( <div className="font-sans"> <Header /> <Routes> <Route path="/" element={<Home />} /> <Route path="/services" element={<Services />} /> <Route path="/booking" element={<Booking />} /> <Route path="/contact" element={<Contact />} /> <Route path="/login" element={<Login />} /> <Route path="/register" element={<Register />} /> <Route path="/profile" element={<Profile />} /> <Route path="/dashboard" element={<Dashboard />} /> </Routes> <Footer /> </div> ); };
+
+export default App;
